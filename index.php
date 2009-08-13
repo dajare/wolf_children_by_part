@@ -1,15 +1,21 @@
 <?php
 /**
- * cs_children_by_page
+ * cs_children_by_part
  */
 
 Plugin::setInfos(array(
-  'id'          => 'cs_children_by_part',
+  'id'          => 'children_by_part',
   'title'       => 'Children by part',
-  'description' => 'Provides a function to get children of a page ordered by the contents of a part',
-  'version'     => '0.1a',
-  'author'      => 'Christian Schorn',
+  'description' => 'Provides a function to get children of a page ordered by the contents of a page-part',
+  'version'     => '0.1',
+  'author'      => 'Christian Schorn; ported by David Reimer',
+  'require_wolf_version' => '0.5.5'
 ));
+
+/**
+ * History:
+ * ported to Wolf CMS 2009-08-13
+ */
 
 /**
  * Gets the direct descendants of a page ordered by the contents of one of their parts.
@@ -20,9 +26,10 @@ Plugin::setInfos(array(
  * @param int how many results are to be returned
  * @param int the offset 
  */
+ 
 function cs_children_by_part(&$page, $part_name, $order = 'asc', $limit = 0, $offset = 0)
 {
-  global $__FROG_CONN__;
+  global $__CMS_CONN__;
   
   $order_sql = strtolower($order) == 'desc' ? 'desc' : 'asc';
   
@@ -42,7 +49,7 @@ function cs_children_by_part(&$page, $part_name, $order = 'asc', $limit = 0, $of
           and pg_part.name = ?
           order by pg_part.content $order_sql
           $limit_sql";
-  $sth = $__FROG_CONN__->prepare($sql);
+  $sth = $__CMS_CONN__->prepare($sql);
   $sth->execute(array($page->id(), $part_name));
   
   $children = array();
