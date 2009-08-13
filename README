@@ -4,3 +4,40 @@ It was authored by Christian Schorn <http://christian-schorn.de/> and was discus
 
 First (frog) release: 2008.10.12
 First (wolf) release: 2009.08.13
+
+USAGE NOTES
+===========
+
+Installation:
+
+1) Place this plugin (as a directory named 'children_by_part' with all contents) in the Wolf /wolf/plugins directory.
+2) Activate the plugin through the administration screen.
+
+Usage:
+
+children_by_part([parent-page], [page-part name], [order], [#]) :
+  [parent-page] = the URI/identity of the page the children of which will be sorted:
+                  examples: $this, find_page_by_uri('/slug/')
+  [page-part name] = the name of the page-part (not "body"!) to be sorted
+  [order] = can be ASC or DESC
+  [#] = the number of pages to be returned
+
+Example:
+
+The page called "Events" (slug = events) has a number of child pages, each with a page part called "date". The following code, used on the "Events" page, will give a date-ordered listing of the child pages, with a link to the sub-page:
+
+[example]
+<h3>Event Dates</h3>
+
+<?php foreach (children_by_part($this,'date') as $event): ?>
+<h4><?php echo $event->link(),',&nbsp;',$event->content('date'); ?></h4>
+<hr />
+<?php endforeach ?>
+[/example]
+
+That will return all child pages except those with a status of "Hidden".
+
+
+
+
+
