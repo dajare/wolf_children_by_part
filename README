@@ -35,7 +35,7 @@ The page called "Events" (slug = events) has a number of child pages, each with 
 <?php endforeach ?>
 [/example]
 
-That will return all child pages except those with a status of "Hidden".
+That will return all child pages which have the 'date' page-part.
 
 
 
