@@ -1,14 +1,15 @@
 ## INTRODUCTION
 
-This is a plugin for Wolf CMS [http://www.wolfcms.org/] It provides the functionality to return child pages sorted by a specified page-part's content.
+This is a plugin for [Wolf CMS][l00]. It provides the functionality to return child pages sorted by a specified page-part's content.
 
-It was authored by Christian Schorn[1]  and was discussed in the Frog Forum[2]. It has now been ported to Wolf CMS.
+It was authored by [Christian Schorn][l01] and was discussed in the [Frog forum][l02]. It has now been ported to Wolf CMS.
 
-[1] http://christian-schorn.de/  
-[2] http://bit.ly/kCnRR  
+[l00]: http://www.wolfcms.org/ "Wolf CMS"
+[l01]: http://christian-schorn.de/ "Christian Schorn"
+[l02]: http://bit.ly/kCnRR "Frog forum thread"
 
-First (frog) release: 2008.10.12  
-First (wolf) release: 2009.08.13  
+* First (frog) release: 2008.10.12
+* First (wolf) release: 2009.08.13
 
 ## USAGE NOTES
 
@@ -22,7 +23,7 @@ First (wolf) release: 2009.08.13
 children_by_part([parent-page], [page-part name], [order], [#]) :
 
 *  [parent-page] = the URI/identity of the page the children of which will be sorted:  
-                  examples: $this, find_page_by_uri('/slug/')
+examples: $this, find_page_by_uri('/slug/')
 *  [page-part name] = the name of the page-part (not "body"!) to be sorted
 *  [order] = can be ASC or DESC
 *  [#] = the number of pages to be returned
