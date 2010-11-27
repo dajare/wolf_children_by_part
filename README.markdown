@@ -4,18 +4,18 @@ This is a plugin for Wolf CMS [http://www.wolfcms.org/] It provides the function
 
 It was authored by Christian Schorn[1]  and was discussed in the Frog Forum[2]. It has now been ported to Wolf CMS.
 
-[1] http://christian-schorn.de/
-[2] http://bit.ly/kCnRR
+[1] http://christian-schorn.de/  
+[2] http://bit.ly/kCnRR  
 
-First (frog) release: 2008.10.12
-First (wolf) release: 2009.08.13
+First (frog) release: 2008.10.12  
+First (wolf) release: 2009.08.13  
 
 ## USAGE NOTES
 
 ### Installation:
 
-1) Place this plugin (as a directory named 'children_by_part' with all contents) in the Wolf /wolf/plugins directory.
-2) Activate the plugin through the administration screen.
+1. Place this plugin (as a directory named 'children_by_part' with all contents) in the Wolf /wolf/plugins directory.
+2. Activate the plugin through the administration screen.
 
 ### Usage:
 
