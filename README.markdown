@@ -20,7 +20,7 @@ It was authored by [Christian Schorn][l01] and was discussed in the [Frog forum]
 
 ### Usage:
 
-children_by_part([parent-page], [page-part name], [order], [#]) :
+`children_by_part([parent-page], [page-part name], [order], [#])` :
 
 *  [parent-page] = the URI/identity of the page the children of which will be sorted:  
 examples: $this, find_page_by_uri('/slug/')
