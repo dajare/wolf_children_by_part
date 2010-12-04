@@ -39,4 +39,4 @@ The page called "Events" (slug = events) has a number of child pages, each with 
     <hr />
     <?php endforeach ?>
 
-That will return all child pages which have the 'date' page-part.
+All child pages which have the 'date' page-part will be returned, in date order. Those without the 'date' page-part will be ignored.
