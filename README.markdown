@@ -1,5 +1,6 @@
 ## INTRODUCTION
 
+![Wolf logo](http://www.wolfcms.org/wiki/_media/wolf_logo_64.png "Wolf CMS logo")
 This is a plugin for [Wolf CMS][l00]. It provides the functionality to return child pages sorted by a specified page-part's content.
 
 It was authored by [Christian Schorn][l01] and was discussed in the [Frog forum][l02]. It has now been ported to Wolf CMS.
