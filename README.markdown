@@ -1,4 +1,4 @@
-## INTRODUCTION
+## Introduction
 
 ![Wolf logo](http://www.wolfcms.org/wiki/_media/wolf_logo_64.png "Wolf CMS logo")
 This is a plugin for [Wolf CMS][l00]. It provides the functionality to return child pages sorted by a specified page-part's content.
@@ -9,10 +9,7 @@ It was authored by [Christian Schorn][l01] and was discussed in the [Frog forum]
 [l01]: http://christian-schorn.de/ "Christian Schorn"
 [l02]: http://bit.ly/kCnRR "Frog forum thread"
 
-* First (frog) release: 2008.10.12
-* First (wolf) release: 2009.08.13
-
-## USAGE NOTES
+## Usage Notes
 
 ### Installation:
 
@@ -38,6 +35,13 @@ The page called "Events" (slug = events) has a number of child pages, each with 
     <?php foreach (children_by_part($this,'date') as $event): ?>
     <h4><?php echo $event->link(),',&nbsp;',$event->content('date'); ?></h4>
     <hr />
-    <?php endforeach ?>
+    <?php endforeach; ?>
 
 All child pages which have the 'date' page-part will be returned, in date order. Those without the 'date' page-part will be ignored.
+
+## Changelog
+
+* 2011-01-26 : function name correction; doc update
+* 2009-08-13 : First Wolf release
+* 2008-10-12 : First Frog release
+

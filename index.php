@@ -13,16 +13,11 @@ Plugin::setInfos(array(
 ));
 
 /**
- * History:
- * ported to Wolf CMS 2009-08-13
- */
-
-/**
  * Gets the direct descendants of a page ordered by the contents of one of their parts.
  *
- * @param object the page
- * @param string the name of the part
- * @param string how to sort the results. Valid values are 'asc' or 'desc'
+ * @param object the parent page
+ * @param string the name of the part in child pages
+ * @param string how to sort the results; valid values are 'ASC' or 'DESC'
  * @param int how many results are to be returned
  * @param int the offset 
  */
