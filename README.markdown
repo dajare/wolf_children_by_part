@@ -26,7 +26,7 @@ examples: $this, find_page_by_uri('/slug/')
 *  [order] = can be ASC or DESC
 *  [#] = the number of pages to be returned
 
-## EXAMPLE
+## Example
 
 The page called "Events" (slug = events) has a number of child pages, each with a page part called "date". The following code, used on the "Events" page, will give a date-ordered listing of the child pages, with a link to the sub-page:
 
