@@ -1,13 +1,13 @@
 <?php
 /**
- * cs_children_by_part
+ * children_by_part
  */
 
 Plugin::setInfos(array(
   'id'          => 'children_by_part',
   'title'       => 'Children by part',
   'description' => 'Provides a function to get children of a page ordered by the contents of a page-part',
-  'version'     => '0.1',
+  'version'     => '0.2',
   'author'      => 'Christian Schorn; ported by David Reimer',
   'require_wolf_version' => '0.5.5'
 ));
@@ -27,7 +27,7 @@ Plugin::setInfos(array(
  * @param int the offset 
  */
  
-function cs_children_by_part(&$page, $part_name, $order = 'asc', $limit = 0, $offset = 0)
+function children_by_part(&$page, $part_name, $order = 'asc', $limit = 0, $offset = 0)
 {
   global $__CMS_CONN__;
   
