@@ -5,10 +5,12 @@
 
 Plugin::setInfos(array(
   'id'          => 'children_by_part',
-  'title'       => 'Children by part',
-  'description' => 'Provides a function to get children of a page ordered by the contents of a page-part',
+  'title'       => __('Children by part'),
+  'description' => __('Provides a function to return the children of a page ordered by the contents of a page-part'),
   'version'     => '0.3',
+  'website'     => 'https://github.com/dajare/wolf_children_by_part',
   'author'      => 'Christian Schorn; updated by David Reimer',
+  'update_url'  => 'http://adajer.byethost5.com/public/plugins.xml',
   'require_wolf_version' => '0.5.5'
 ));
 

@@ -13,7 +13,7 @@ It was authored by [Christian Schorn][l01] and was discussed in the [Frog forum]
 
 ### Installation:
 
-1. Place this plugin (as a directory named 'children_by_part' with all contents) in the Wolf /wolf/plugins directory.
+1. Place this plugin (ensuring the directory is named 'children_by_part', with all contents) in the Wolf /wolf/plugins directory.
 2. Activate the plugin through the administration screen.
 
 ### Usage:
@@ -31,7 +31,7 @@ Only the **parent-page** and the **page-part name** are required.
 
 ## Example
 
-The page called "Events" (slug = events) has a number of child pages, each with a page part called "date". The following code, used on the "Events" page, will give a date-ordered listing of the child pages, with a link to the sub-page:
+The page called "Events" (slug = events) has a number of child pages, each with a page part called "date", where you put a date like "2011-02-14". The following code, used on the "Events" page, will then give a date-ordered listing of the child pages, with a link to the sub-page:
 
     <h3>Event Dates</h3>
     
@@ -40,9 +40,12 @@ The page called "Events" (slug = events) has a number of child pages, each with 
     <hr />
     <?php endforeach; ?>
 
-All child pages which have the 'date' page-part will be returned, in date order. Those without the 'date' page-part will be ignored.
+* All child pages which have the 'date' page-part will be returned, in date order.
+* Those **without** the 'date' page-part will be **ignored**.
 
 ## Changelog
+
+* 2011-02-12 : update plugin info, i18n for id etc.
 
 0.3
 
