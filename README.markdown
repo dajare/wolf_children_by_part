@@ -18,13 +18,16 @@ It was authored by [Christian Schorn][l01] and was discussed in the [Frog forum]
 
 ### Usage:
 
-`children_by_part([parent-page], [page-part name], [order], [#])` :
+`children_by_part([parent-page], [page-part name], [order], [limit], [offset])` :
 
 *  [parent-page] = the URI/identity of the page the children of which will be sorted:  
 examples: `$this`, `$this->find('slug')`, `Page::findById(21)`
 *  [page-part name] = the name of the page-part (not "body"!) to be sorted
-*  [order] = can be ASC or DESC
-*  [#] = the number of pages to be returned
+*  [order] = can be ASC or DESC for alpha sort, ASCNUM or DESCNUM for numeric sort
+*  [limit] = the number of pages to be returned (integer)
+*  [offset] = an offset, to begin sort at nth child (integer)
+
+Only the **parent-page** and the **page-part name** are required.
 
 ## Example
 
@@ -41,7 +44,11 @@ All child pages which have the 'date' page-part will be returned, in date order.
 
 ## Changelog
 
+0.3
+* 2011-02-12 : numeric sort option added; doc update and tidy
+
+0.2
 * 2011-01-26 : function name correction; doc update
+
 * 2009-08-13 : First Wolf release
 * 2008-10-12 : First Frog release
-
