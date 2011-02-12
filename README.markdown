@@ -45,10 +45,14 @@ All child pages which have the 'date' page-part will be returned, in date order.
 ## Changelog
 
 0.3
+
 * 2011-02-12 : numeric sort option added; doc update and tidy
 
 0.2
+
 * 2011-01-26 : function name correction; doc update
+
+0.1
 
 * 2009-08-13 : First Wolf release
 * 2008-10-12 : First Frog release
