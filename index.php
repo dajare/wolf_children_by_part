@@ -7,10 +7,10 @@ Plugin::setInfos(array(
   'id'          => 'children_by_part',
   'title'       => __('Children by part'),
   'description' => __('Provides a function to return the children of a page ordered by the contents of a page-part'),
-  'version'     => '0.3',
+  'version'     => '0.4',
   'website'     => 'https://github.com/dajare/wolf_children_by_part',
   'author'      => 'Christian Schorn; updated by David Reimer',
-  'update_url'  => 'http://adajer.byethost5.com/public/plugins.xml',
+  'update_url'  => 'http://subversion.assembla.com/svn/wolf_tools/trunk/xml/plugin_versions.xml',
   'require_wolf_version' => '0.5.5'
 ));
 
