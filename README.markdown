@@ -45,6 +45,9 @@ The page called "Events" (slug = events) has a number of child pages, each with 
 
 ## Changelog
 
+0.4
+
+* 2011-06-11 : new location for version XML file
 * 2011-02-12 : update plugin info, i18n for id etc.
 
 0.3
